@@ -1,0 +1,777 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Poppins:wght@400;500;600;700;800;900&display=swap");
+@import url("http://fonts.cdnfonts.com/css/post-no-bills-jaffna");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.wrapper {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  font-family: "PT Sans", sans-serif;
+  overflow: hidden;
+}
+
+.header {
+  position: relative;
+}
+.header__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #969696;
+  font-size: 12px;
+  height: 44px;
+}
+@media (max-width: 768px) {
+  .header__block {
+    display: block;
+    height: 50px;
+    padding-top: 5px;
+  }
+}
+@media (max-width: 412px) {
+  .header__block {
+    height: 55px;
+  }
+}
+.header__info {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .header__info {
+    justify-content: end;
+    height: 50%;
+  }
+}
+.header__tel {
+  margin: 0 15px;
+}
+@media (max-width: 412px) {
+  .header__tel {
+    margin: 0 8px;
+  }
+}
+.header__work {
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  padding: 0 15px;
+}
+@media (max-width: 412px) {
+  .header__work {
+    padding: 0 8px;
+  }
+}
+.header__time {
+  margin-left: 15px;
+}
+@media (max-width: 412px) {
+  .header__time {
+    margin-left: 8px;
+  }
+}
+.header__sign {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .header__sign {
+    justify-content: end;
+  }
+}
+.header__sign-img {
+  padding-top: 2px;
+  margin-right: 10px;
+}
+@media (max-width: 412px) {
+  .header__sign-img {
+    margin-right: 8px;
+  }
+}
+.container {
+  width: 57vw;
+  margin: 0 auto;
+}
+@media (max-width: 992px) {
+  .container {
+    width: 90vw;
+  }
+}
+
+.menu {
+  background-color: #0F0F0F;
+}
+.menu__main {
+  position: relative;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .menu__main {
+    height: 60px;
+  }
+}
+.menu__block {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .menu__block {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    background-color: #0F0F0F;
+    right: 0;
+    top: 60px;
+    padding: 15px 20px 15px 20px;
+    right: -100%;
+    transition: 0.2s;
+  }
+}
+.menu__button {
+  display: flex;
+  height: 100%;
+}
+@media (max-width: 768px) {
+  .menu__button {
+    height: 60px;
+  }
+}
+.menu__logo {
+  font-family: "Post No Bills Jaffna", sans-serif;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.87vw;
+}
+@media (max-width: 768px) {
+  .menu__logo {
+    font-size: 20px;
+  }
+}
+.menu__item {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 0 20px;
+}
+@media (max-width: 768px) {
+  .menu__item {
+    font-size: 18px;
+  }
+}
+.menu__item:hover {
+  background-color: #1F1F1F;
+}
+.menu__icon a {
+  margin-left: 20px;
+}
+@media (max-width: 992px) {
+  .menu__icon {
+    margin-right: 20px;
+  }
+  .menu__icon a {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .menu__icon {
+    width: 100%;
+    text-align: right;
+  }
+}
+.menu__burger {
+  display: none;
+  position: relative;
+  width: 30px;
+  height: 23px;
+}
+@media (max-width: 768px) {
+  .menu__burger {
+    display: block;
+  }
+}
+.menu__burger span {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  top: 9px;
+}
+.menu__burger span:first-child {
+  top: 0;
+  transition: 0.2s;
+}
+.menu__burger span:nth-child(2) {
+  transition: 0.3s;
+}
+.menu__burger span:last-child {
+  top: 18px;
+  transition: 0.15s;
+}
+
+.wrapper.active .menu__burger span {
+  transform: scale(0);
+}
+.wrapper.active .menu__burger span:first-child {
+  transform: rotate(-45deg);
+  top: 9px;
+}
+.wrapper.active .menu__burger span:last-child {
+  transform: rotate(45deg);
+  top: 9px;
+}
+.wrapper.active .menu__block {
+  right: -5vw;
+}
+
+.porten {
+  background: url("../img/Rectangle 3.jpg") 50%, 50%/100% no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding-bottom: 154px;
+  padding-top: 160px;
+}
+@media (max-width: 992px) {
+  .porten {
+    padding: 12vw 0 8.3vw 0;
+  }
+}
+.porten__main {
+  padding-bottom: 80px;
+}
+@media (max-width: 992px) {
+  .porten__main {
+    padding-bottom: 8vw;
+  }
+}
+.porten__block {
+  width: 320px;
+  height: 320px;
+  border: 4px solid #fff;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .porten__block {
+    width: 40vw;
+    height: 40vw;
+  }
+}
+.porten__logo {
+  font-family: "Post No Bills Jaffna";
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 64px;
+  text-align: center;
+  border-bottom: 2px solid #fff;
+}
+@media (max-width: 768px) {
+  .porten__logo {
+    font-size: 9vw;
+  }
+}
+.porten__city {
+  font-size: 22px;
+  text-transform: uppercase;
+  line-height: 200%;
+}
+@media (max-width: 768px) {
+  .porten__city {
+    font-size: 3vw;
+  }
+}
+.porten__text {
+  max-width: 80vw;
+  width: 730px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 150%;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .porten__text {
+    font-size: 14px;
+  }
+}
+
+.collection {
+  display: flex;
+}
+@media (max-width: 992px) {
+  .collection {
+    display: block;
+  }
+}
+.collection__sezon {
+  width: 54vw;
+  height: 37.9vw;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 992px) {
+  .collection__sezon {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 100px 0 90px 0;
+  }
+}
+.collection__block {
+  display: flex;
+  justify-content: space-between;
+  width: 45.7vw;
+  margin: 0 auto;
+}
+@media (max-width: 992px) {
+  .collection__block {
+    width: 86vw;
+  }
+}
+.collection__watchs {
+  width: 13.5vw;
+}
+@media (max-width: 992px) {
+  .collection__watchs {
+    width: 25vw;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 412px) {
+  .collection__watchs {
+    width: 40vw;
+  }
+}
+@media (max-width: 412px) {
+  .collection__watchs:last-child {
+    display: none;
+  }
+}
+.collection__image {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  background-color: #191B1C;
+  width: 100%;
+  height: 16.9vw;
+  margin-bottom: 1.3vw;
+}
+@media (max-width: 992px) {
+  .collection__image {
+    margin-bottom: 1.5vw;
+    height: 31vw;
+  }
+}
+@media (max-width: 412px) {
+  .collection__image {
+    margin-bottom: 10px;
+    height: 50vw;
+  }
+}
+.collection__image img {
+  width: 82%;
+  margin: 0 auto;
+}
+.collection__text {
+  display: block;
+}
+.collection__new {
+  width: 46vw;
+  height: 37.9vw;
+  min-height: 100%;
+  background: url("../img/Rectangle 8.jpg") 0 0/100% no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+@media (max-width: 992px) {
+  .collection__new {
+    width: 100%;
+    height: 50vw;
+    min-height: 250px;
+  }
+}
+.collection__new-block {
+  margin-bottom: 5.2vw;
+  text-align: center;
+}
+
+.btn {
+  display: inline-flex;
+  border: 1px solid #fff;
+  padding: 15px 30px;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.title__2 {
+  line-height: 0;
+  margin-bottom: 6.2vw;
+}
+@media (max-width: 992px) {
+  .title__2 {
+    margin-bottom: 80px;
+    line-height: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .title__2 {
+    margin-bottom: 70px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 412px) {
+  .title__2 {
+    margin-bottom: 30px;
+    line-height: 30px;
+  }
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.9vw;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 3.2vw;
+}
+@media (max-width: 992px) {
+  h2 {
+    font-size: 28px;
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 412px) {
+  h2 {
+    font-size: 17px;
+    margin-bottom: 50px;
+  }
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  width: 6.2vw;
+  height: 1px;
+  top: 3.4vw;
+  left: calc(50% - 3.1vw);
+  background-color: #fFF;
+}
+@media (max-width: 992px) {
+  h2::after {
+    width: 100px;
+    left: calc(50% - 50px);
+    top: 55px;
+  }
+}
+@media (max-width: 412px) {
+  h2::after {
+    width: 80px;
+    left: calc(50% - 40px);
+    top: 40px;
+  }
+}
+
+h3 {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  text-align: left;
+}
+@media (max-width: 992px) {
+  h3 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 412px) {
+  h3 {
+    font-size: 14px;
+  }
+}
+
+h4 {
+  font-family: "Playfair Display";
+  font-size: 16px;
+  text-align: left;
+  line-height: 200%;
+}
+
+h5 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.old {
+  display: flex;
+}
+.old__image {
+  width: 46vw;
+  min-height: 31.2vw;
+  background: url("../img/Rectangle 9.jpg") 50%/100% no-repeat;
+  background-size: cover;
+}
+@media (max-width: 768px) {
+  .old__image {
+    display: none;
+  }
+}
+.old__block {
+  width: 54vw;
+  min-height: 100%;
+  padding: 5.2vw 0;
+  text-align: center;
+}
+@media (max-width: 992px) {
+  .old__block {
+    width: 80%;
+    margin: 0 auto;
+    padding: 9vw 0;
+  }
+}
+.old__text {
+  width: 25vw;
+  margin: 0 auto 60px auto;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+}
+@media (max-width: 992px) {
+  .old__text {
+    width: 86%;
+  }
+}
+@media (max-width: 992px) {
+  .old__button {
+    padding: 10px 15px;
+  }
+}
+
+.watch {
+  padding: 6.24vw 0 12vw 0;
+}
+.watch__block {
+  width: 59vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 1.5vw;
+  grid-row-gap: 2vw;
+}
+@media (max-width: 992px) {
+  .watch__block {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 412px) {
+  .watch__block {
+    width: 86vw;
+  }
+}
+
+.brands {
+  padding: 60px 0 80px 0;
+  background-color: #0F0F0F;
+}
+.brands__block {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+.about {
+  padding: 80px 0 100px 0;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 150%;
+  background: url("../img/Rectangle 15.jpg") 50%, 50%/100% no-repeat;
+  background-size: cover;
+  color: #D0D0D0;
+}
+@media (max-width: 992px) {
+  .about {
+    padding: 50px 0 60px 0;
+  }
+}
+.about__market {
+  width: 350px;
+  margin-right: 10px;
+}
+@media (max-width: 992px) {
+  .about__market {
+    width: clamp(120px, 86vw, 580px);
+    margin-bottom: 20px;
+  }
+}
+.about__categories {
+  width: 350px;
+  margin: 0 10px;
+}
+@media (max-width: 992px) {
+  .about__categories {
+    width: 100%;
+  }
+}
+.about__button-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+.about__button-item {
+  background-color: #0F0F0F;
+  padding: 10px 20px;
+  margin: 0 20px 20px 0px;
+}
+.about__newsletter {
+  width: 350px;
+  margin-left: 10px;
+}
+@media (max-width: 992px) {
+  .about__newsletter {
+    width: clamp(150px, 86vw, 580px);
+  }
+}
+.about__newsletter-text {
+  margin-bottom: 37px;
+}
+.about__newsletter-button {
+  position: relative;
+  max-width: 350px;
+}
+
+.search {
+  border: none;
+  height: 40px;
+  width: clamp(130px, 10vw, 210px);
+  color: #D0D0D0;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 0 20px;
+}
+
+.icon {
+  border: none;
+  position: absolute;
+  width: 140px;
+  height: 41px;
+  color: #fFF;
+  background-color: #0F0F0F;
+  font-size: 14px;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+@media (max-width: 992px) {
+  .icon {
+    font-size: 12px;
+    width: 120px;
+  }
+}
+
+.footer {
+  height: 50px;
+  font-size: 12px;
+}
+.footer__rights {
+  align-self: center;
+}
+.footer__make {
+  align-self: center;
+}
+
+.abt {
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 992px) {
+  .abt {
+    display: block;
+  }
+}
+
+.foot {
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */
